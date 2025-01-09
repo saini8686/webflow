@@ -19,6 +19,7 @@ app.get("/api/webflow-data", async (_req, res) => {
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
       },
+      mode:'no-cors'
     });
     console.log(response);
     if (!response.ok) {
